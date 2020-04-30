@@ -86,8 +86,19 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center fixed;
+  background: url(../img/feat-pic.jpg) top center fixed;
   background-size: cover;
+}
+/* rgb(193, 17, 193); */
+.logo{
+  font-family: 'Aclonica', sans-serif;
+ color: #fff;
+ font-size: 70px;
+ font-weight: 800;
+}
+#logo-p {
+  font-size: 30px;
+  padding: 0
 }
 
 #hero .hero-logo {
@@ -119,6 +130,13 @@ h1, h2, h3, h4, h5, h6 {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+  }
+  .logo{
+   font-size: 33px;
+   font-weight: 800;
+  }
+  #logo-p {
+    font-size: 15px;
   }
 }
 
@@ -484,7 +502,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container {
-  background: url(../img/about-img.jpg) left top no-repeat;
+  background: url(../img/mop2.jpg) left top no-repeat;
 }
 
 #about .about-content {
@@ -508,7 +526,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/services-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/mop3.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
