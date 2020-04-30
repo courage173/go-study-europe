@@ -23,7 +23,6 @@ const removeResponse = (item) => {
 
 }
 
-
 function buildEmail() {
     contactForm.forEach((item) => {
         const val = item.childNodes[3]
@@ -52,8 +51,6 @@ function buildEmail() {
                 }
             })
         }
-
-
     })
 }
 

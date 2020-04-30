@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 /* rgb(193, 17, 193); */
 .logo{
   font-family: 'Aclonica', sans-serif;
- color: #fff;
+ color: purple;
  font-size: 70px;
  font-weight: 800;
 }
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-container {
-  background: rgba(0, 0, 0, 0.8);
+  /* background: rgba(0, 0, 0, 0.8); */
   display: table-cell;
   margin: 0;
   padding: 0;
