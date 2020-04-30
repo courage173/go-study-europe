@@ -68,7 +68,7 @@ async function handleSubmit(e) {
     e.preventDefault()
     const valid = validateForm(emailBody)
     if (valid) {
-        const req = await fetch('http://localhost:8000/email', {
+        const req = await fetch('http://arc-cleaning.herokuapp.com/email', {
             method: 'post',
             body: JSON.stringify(emailBody),
             headers: {

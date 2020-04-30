@@ -1,11 +1,22 @@
 const express = require("express")
+const cors = require("cors")
 const ejs = require('ejs')
 const nodemailer = require('nodemailer')
+const bodyParser = require('body-parser')
+
+
 const app = express()
 app.use(express.json())
 const path = require('path');
 
 app.use(express.static(path.join(__dirname, 'static')));
+
+app.use(cors());
+
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
 
 
 
