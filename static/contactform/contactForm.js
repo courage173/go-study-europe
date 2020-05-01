@@ -68,13 +68,16 @@ async function handleSubmit(e) {
     e.preventDefault()
     const valid = validateForm(emailBody)
     if (valid) {
-        const req = await fetch('http://arc-cleaning.herokuapp.com/email', {
+        const req = await fetch('https://arc-cleaning.herokuapp.com/email', {
             method: 'post',
             body: JSON.stringify(emailBody),
             headers: {
                 'Content-Type': 'application/json',
                 Accept: 'application/json'
             }
+        }).catch(() => {
+            ShowResponse(genError, 'Server  Error, please check your internet')
+            setTimeout(() => removeResponse(genError), 2000)
         })
 
         const res = await req.json()
